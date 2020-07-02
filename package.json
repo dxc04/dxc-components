@@ -1,5 +1,5 @@
 {
-  "name": "dxc-components",
+  "name": "@datay/dxc-components",
   "version": "0.1.0",
   "private": true,
   "scripts": {
