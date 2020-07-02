@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "npm run build:lib & npm run build:wc",
+    "build": "npm run build:wc & npm run build:lib",
     "lint": "vue-cli-service lint",
     "build:lib": "vue-cli-service build --target lib --name dxc-components 'src/main.js'",
     "build:wc": "vue-cli-service build --target wc --name dxc-components 'src/components/*.vue'"
