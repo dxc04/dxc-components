@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+// import components here
+import Button from "./components/Button.vue";
+import AnotherButton from "./components/AnotherButton.vue";
 
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// export components for this library
+export default {
+  Button,
+  AnotherButton
+};

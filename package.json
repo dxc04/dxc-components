@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:lib & npm run build:wc",
+    "lint": "vue-cli-service lint",
+    "build:lib": "vue-cli-service build --target lib --name dxc-components 'src/main.js'",
+    "build:wc": "vue-cli-service build --target wc --name dxc-components 'src/components/*.vue'"
   },
+  "main": "dist/dxc-components.common.js",
+  "unpkg": "dist/dxc-components.min.js",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -38,5 +42,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "repository": "github.com:dxc04/dxc-components"
 }
